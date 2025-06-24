@@ -853,6 +853,14 @@ body {
   position: relative;
 }
 
+.seo .heading-h2 .span-primary {
+  color: var(--primary-color);
+}
+
+.seo .heading-h2 .span-secondary {
+  color: var(--secondary-color);
+}
+
 .seo .seo__img {
   position: absolute;
   bottom: 0;
