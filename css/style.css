@@ -196,6 +196,7 @@ body {
 .desc {
   span {
     font-weight: 500;
+    color: var(--text-color);
   }
 }
 
