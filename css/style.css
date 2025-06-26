@@ -23,6 +23,28 @@ ol {
   color: inherit;
 }
 
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../fonts/Inter-Display/InterDisplay-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../fonts/Inter-Display/InterDisplay-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../fonts/Inter-Display/InterDisplay-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../fonts/Inter-Display/InterDisplay-SemiBold.otf')
+    format('opentype');
+}
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../fonts/Inter-Display/InterDisplay-Bold.otf') format('opentype');
+}
+
 :root {
   --primary-color: #ff5500;
   --secondary-color: #ffb445;
@@ -30,6 +52,7 @@ ol {
   --text-color: #000000;
 
   --font-base: 'Inter', sans-serif;
+  --font-primary: 'Inter Display';
   --font-secondary: 'General Sans', sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
@@ -203,6 +226,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+  background-color: #c54200;
 }
 
 .btn-outline {
@@ -222,6 +250,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .header-bottom__buttons {
@@ -322,6 +355,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 48px;
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -423,6 +457,7 @@ body {
 /* Kotaro Story */
 .kotaro-story {
   background-color: #000000;
+  overflow: hidden;
 }
 
 .kotaro-story__wrapper {
@@ -477,13 +512,14 @@ body {
   .heading-h2 {
     font-size: 42px;
     letter-spacing: -0.16px;
+    font-weight: 500;
   }
 }
 
 @media (max-width: 991px) {
   .heading-h2 {
     font-size: 28px;
-    letter-spacing: -0.84px;
+    /* letter-spacing: -0.84px; */
   }
 }
 
@@ -646,6 +682,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+
+@media (max-width: 991px) {
+  .featured-project__top {
+    text-align: center;
+  }
 }
 
 .featured-project__center {
@@ -887,6 +929,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+}
+
+@media (max-width: 991px) {
+  .inovation__right-bottom {
+    text-align: center;
+  }
 }
 
 /* philosophy */
@@ -1193,6 +1241,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3d3d3d;
 }
 
 .cta-form__buttons .btn-secondary {
@@ -1217,6 +1270,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-outline_v2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cta-form__buttons {
@@ -1305,6 +1363,12 @@ body {
   gap: 16px;
 }
 
+@media (max-width: 991px) {
+  .contact-form__input-group {
+    flex-direction: column;
+  }
+}
+
 .contact-form__input-wrap {
   display: flex;
   flex-direction: column;
@@ -1319,6 +1383,10 @@ body {
 }
 
 /* seo */
+.seo {
+  overflow: hidden;
+}
+
 .seo .container {
   padding-top: 40px;
   padding-bottom: 80px;
@@ -1461,6 +1529,11 @@ body {
   font-weight: 400;
   line-height: 100%; /* 16px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
 .nav-menu {
@@ -1478,9 +1551,15 @@ body {
   line-height: 120%; /* 16.8px */
   letter-spacing: -0.14px;
 
-  dispay: inline-flex;
+  display: inline-flex;
   gap: 8px;
   align-items: center;
+  transition: all 300ms ease;
+}
+
+.btn-link:hover,
+.btn-link:hover .svg path {
+  color: var(--primary-color);
 }
 
 .btn-link span {
