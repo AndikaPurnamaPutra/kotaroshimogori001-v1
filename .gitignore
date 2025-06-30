@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# MacOS metadata file
+.DS_Store
+
+# Log files
+*.log
+
+# Env file
+.env
